@@ -1,0 +1,47 @@
+{
+	"name": "scaleable-mern-app",
+	"version": "1.0.0",
+	"description": "MERN app using NextJS that will be deployed through AWS",
+	"main": "server.js",
+	"homepage": "https://github.com/DntworryJayshere/scalable-mern-app#readme",
+	"scripts": {
+		"server-dependencies": "npm install",
+		"client-dependencies": "cd client && npm install",
+		"install-all-deps": "concurrently \"npm run server-dependencies\" \"npm run client-dependencies\"",
+		"start": "node server.js",
+		"server": "nodemon server.js",
+		"client": "cd client && npm run devC",
+		"buildA": "cd client && npm run build",
+		"dev": "concurrently \"npm run server\" \"npm run client\"",
+		"ree": "rm -rf node_modules/ && cd client && rm -rf node_modules/"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/DntworryJayshere/scalable-mern-app.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"aws-sdk": "^2.861.0",
+		"axios": "^0.21.1",
+		"bcryptjs": "^2.4.3",
+		"cors": "^2.8.5",
+		"dotenv": "^8.2.0",
+		"express": "^4.17.1",
+		"express-jwt": "^5.3.3",
+		"express-validator": "^6.10.0",
+		"formidable": "^1.2.1",
+		"jsonwebtoken": "^8.5.1",
+		"lodash": "^4.17.15",
+		"mongoose": "^5.11.15",
+		"morgan": "^1.10.0",
+		"shortid": "^2.2.15",
+		"slugify": "^1.3.6",
+		"uuid": "^3.4.0"
+	},
+	"devDependencies": {
+		"concurrently": "^5.2.0",
+		"nodemon": "^2.0.4"
+	}
+}

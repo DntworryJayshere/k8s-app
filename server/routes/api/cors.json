@@ -1,0 +1,9 @@
+[
+	{
+		"AllowedOrigin": ["*"],
+		"AllowedMethods": ["GET", "PUT", "POST"],
+		"MaxAgeSeconds": ["3000"],
+		"AllowedHeaders": ["*"],
+		"AllowedHeader": ["Authorization"]
+	}
+]
