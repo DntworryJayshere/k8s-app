@@ -1,10 +1,10 @@
 {
-	"name": "scaleable-mern-app",
+	"name": "k8sapp-client",
 	"version": "1.0.0",
-	"description": "MERN app using NextJS that will be deployed through AWS",
+	"description": "MERN app through kubernetes",
 	"main": "index.js",
 	"private": true,
-	"proxy": "http://localhost:8000/",
+	"proxy": "http://localhost:3000/",
 	"dependencies": {
 		"@zeit/next-css": "^1.0.1",
 		"axios": "^0.21.1",

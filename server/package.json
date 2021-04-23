@@ -1,9 +1,9 @@
 {
-	"name": "scaleable-mern-app",
+	"name": "k8sapp",
 	"version": "1.0.0",
-	"description": "MERN app using NextJS that will be deployed through AWS",
+	"description": "MERN app through kubernetes",
 	"main": "server.js",
-	"homepage": "https://github.com/DntworryJayshere/scalable-mern-app#readme",
+	"homepage": "https://github.com/DntworryJayshere/k8sapp#readme",
 	"scripts": {
 		"server-dependencies": "npm install",
 		"client-dependencies": "cd client && npm install",
@@ -17,7 +17,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/DntworryJayshere/scalable-mern-app.git"
+		"url": "https://github.com/DntworryJayshere/k8sapp"
 	},
 	"keywords": [],
 	"author": "",
