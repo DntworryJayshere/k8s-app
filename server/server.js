@@ -1,4 +1,5 @@
 const express = require('express');
+const cors = require('cors');
 const connectDB = require('./config/db');
 require('dotenv').config();
 
@@ -11,8 +12,9 @@ const PORT = process.env.PORT || 5000;
 connectDB();
 
 //init middleware
-app.use(express.urlencoded({ extended: true }));
+app.use(express.urlencoded({ extended: false }));
 app.use(express.json({ limit: '5mb', extended: false }));
+app.use(cors());
 
 // Serve static assets in production
 if (process.env.NODE_ENV === 'production') {

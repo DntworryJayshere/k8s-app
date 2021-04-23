@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: k8sapp-server-deployment
+  labels:
+    app: k8sapp-server
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: k8sapp-server
+  template:
+    metadata:
+      labels:
+        app: k8sapp-server
+    spec:
+      containers:
+        - name: k8sapp-server
+          image: s*************************
+          ports:
+            - containerPort: 5000
+              name: nodejs-port
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: k8sapp-server-service
+spec:
+  selector:
+    app: k8sapp-server
+  ports:
+    - protocol: TCP
+      port: 5000
+      targetPort: 5000
+  type: NodePort
